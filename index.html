@@ -1,43 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ebrialdo de Chihuahua</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="icon" href="./assets/modelo.jfif" type="image/jfif">
+    <link rel="icon" href="./assets/th.jfif" type="image/jfif">
+     -->
+
+    
+
 </head>
 
-<body>
-    <h1>My Portafolio</h1>
-    <h2>Web Developer</h2>
-    <hr />
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="movie ranking"/>
+
+<body class="gradient-background">
+
+    <header class="header">
+      <div class="container">
+
+        <div class="site">
+            <img src="./img/newspaper.svg" alt="imagen"/>
+            <div>
+                <p class="name">El Ebrialdo de Chihuahua</p>
+                <p class="desc">Noticionez de Primera Fuente</p>
+            </div> 
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#" class="btn">Contactanos</a></li>
+          </ul>
+        </nav>
+
+
+
+        <button type="button" class="nav-button"
+        onclick="navFunc()">
+            <span class="sr-only">Menu</span>
+        </button>
+      </div>
+
+    </header>
+
+
+
+    <!-- Hero -->
+    <section class="hero">
+     <div class="headline">
+      <div class="container">
+        <h1>
+            <img src="./img/NA.svg"/>
+        </h1>
+        <p>Con Seriedad Laboral</p>
+      </div>
+     </div>
+
+    </section>
+
+
+    <!-- message -->
+    <section class="message">
+      <div class="container">
+      <h2>15 Dias de Experiencia como periodistas profesionales <br> 
+        en toda rama nos respaldan
+      </h2>
+      <p>Somos periodistas profesionales que
+        buscan la noticia directamente, nada de
+        fulano me contó ni nada. Buscamos la
+        noticia en persona con los autores
+        intelectuales de la susodicha. Contamos con
+        certificaciones especiales como tutoriales de 5 minutos
+        de youtube avalados por el proletariado y por usted sino
+         no andaria aqui leyendo estos espectaculares y andaría
+        viendo videos de gatitos</p>
+      </div>
+    </section>
+
+
+    <section class="service">
+      <div class="container">
+        <h2>Noticias Más Destacadas</h2>
+        <p>Espectaculares del Momento</p>
+
+        <div class="noticias">
+
+          <article class="noticia anestesiologo">
+            <figure>
+            <img src="./img/anestesiologo.jfif" alt="anestesiologo">
+          </figure>
+            <h3>Anestesiologo salva el dia,<br> talvez la carrera medicinal</h3>
+            <p>Anestesiologo se viste de heroe al
+              reparar un error que le hubiera costado
+              la vida al paciente. Su heroismo lo catapultó
+              a la cima de su gerencia administrativa pues ahora
+              paises europeos lo buscan para que les muestre
+              su técnica. Descubre su historia solo aqui,
+              no con Doriga ni Loret de Mola, aqui te contamos los por menores.
+            </p>
+            <a href="./Anestesiologo.html" class="btn">Leer Noticia Completa</a>
+          </article>
+          
+          <article class="noticia" class="tren">
+            <figure>
+            <img src="./img/tren.jfif" alt="tren">
+          </figure>
+           <h3>El Tren Maya <br>Cambia sus Clases</h3>
+           <p>El tren maya causa revuelo a nivel nacional
+            tras cancelar la clasificacion de clases. No habrá
+            mas primera ni segunda clase para los pasageros
+            en esta nueva modalidad. Si planeas abordar el
+            famoso tren, te recomendamos leer este articulo
+            para que sepas como pedir tu boleto.
+           </p>
+          <a href="#" class="btn">Leer Noticia Completa</a>
+          </article>
+
+
+          <article class="noticia" class="cielito">
+            <figure>
+            <img src="./img/cielito.jfif" alt="cielito">
+          </figure>
+            <h3>Piden cancelar canciones racistas,<br> entre ellas, Cielito Lindo</h3>
+            <p>El Comite Progresista de Jovenes por el Progreso y Mejora del Planeta Tierra y sus Alrededores (la COPROJOPROMEPLATIAL)
+              piden cancelar todas las canciones con indole racista, machista y no progresista.
+              Entre las melodias que quieren borrar de la mente humana se encuentra Cielito Lindo.
+              Te contamos aqui los argumentos que se presentan contra tan popular melodia.
+            </p>
+            <a href="#" class="btn">Leer Noticia Completa</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contacto">
+
+      <div class="container">
+        <div class="text">
+        <h2>Contactanos</h2>
+        <p>Si tienes algun chisme
+        para investigar a fondo,<br> porfavor
+      contactanos. Dudas o preguntas<br>
+      son bienvenidas ya que sabemos todo.</p>
+      </div>
+
+      <form class="form">
+        <p>
+          <label>
+            <span class="sr-only">Nombre</span>
+            <input type="text" name="name"
+            placeholder="Nombre">
+
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <span class="sr-only">Email</span>
+            <input type="email" name="email"
+            placeholder="Email">
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <span class="sr-only">Mensaje</span>
+            <textarea name="msg"
+            placeholder="Mensaje"></textarea>
+          </label>
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR" class="btn">
+        </p>
+       
+
+
+      </form>
+
+
+      </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+      <div class="info">
+        <div class="site">
+         <img src="./img/modelo.jfif">
+         <div>
+          <p class="name">El Ebrialdo de Chihuahua</p>
+         </div>
+         
+        </div>
+        <p class="add">
+          Valle Tequililla Ave. Chole Pozole Calle. #9999<br>
+          15463 Saucillo, Chihuahua <br>
+          +1-800-1234-5678
+         </p>
+      </div>
+      <ul class="sns">
+        <li><a href="www.twitter.com"><img src="./img/logo-twitter.svg" alt="Twitter"></a></li>
+        <li><a href="www.facebook.com"><img src="./img/logo-facebook.svg" alt="Facebook"></a></li>
+        <li><a href="www.instagram.com"><img src="./img/logo-instagram.svg" alt="Instagram"></a></li>
+      </ul>
+    </div>
+    </footer>
+
+
+    <script>
+      function navFunc() {
+        document.querySelector('html').classList.toggle('open');
+      }
+    </script>
+
+
     
-    <hr />
-
-    <h3><a href="./public/birthday-invite.html">Birthday Invitation</a></h3>
-    <img src="./assets/images/cake.png" height="200" alt="cake preview"/>
-
-    <hr />
-    
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact</a>
-      
-
 
 </body>
 </html>
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
